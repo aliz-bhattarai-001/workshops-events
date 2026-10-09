@@ -1,0 +1,146 @@
+\documentclass[12pt]{report} % The command
+% [12pt] : sets the font size to 12 pt
+% Latex ma default font size: about 10-11
+
+
+\usepackage{parskip}
+% \usepackage[a4paper, margin=1in]{geometry}
+
+% To control the geomertry of paper: size , margin
+\usepackage[a4paper,inner=1.5in, outer=1in, top=1in, bottom=1in]{geometry}
+% curly bracket bhitra : Compulsory parameters
+% big bracket bhitra: Optional parameters.
+
+\usepackage{times} % changing font to times new roman.
+
+
+% For Underline error fix
+\usepackage{soul} % gives \ul{}
+
+
+% For mathematical typesetting
+\usepackage{amsmath, amssymb, amsfonts}
+
+% for times new roman math font
+\usepackage{mathptmx}
+
+\usepackage{caption}
+
+% For tables
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{makecell}
+
+\setlength{\parskip}{1em}
+\begin{document} % The environment
+\chapter{Tables}
+\begin{table}[htb]
+\centering
+\caption{Random Table}
+\renewcommand{\arraystretch}{2.5} % to control the padding between each table cell (inner)
+\begin{tabular}{|c|p{6cm}|r|l|} % for vertical line
+% c for center align
+    \hline
+    S.N & Particulars & Price & Remarks \\ \hline % for horizontal line
+    1 &  Apple & 100 & something \\ \hline
+    2 &  Mango & 100 & something \\ \hline
+    3 &  Orange & 100 & something \\ \hline
+    4 &  Pineapples & 100 & something \\ \hline
+    5 &  Something of a large text length RANDOMNESS INCREASES WITH TIME& 100 & something \\ \hline
+\end{tabular}
+\caption{Another caption}
+\end{table}
+
+
+\begin{table}
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+         One & Two  & Three & Four & Five\\\hline
+         1&  8&  9&  15& 16\\
+         2&  7&  0&  14& 17\\
+         3&  6&  10&  13& 18\\
+         4&  5&  11&  12& 19\\\hline
+    \end{tabular}
+    \caption{Something Random}
+    \label{tab:placeholder}
+\end{table}
+
+\section{Long Tables}
+
+\begin{longtable}{|c|ccc|c|}
+\caption{This is a longtable Caption}\\
+\hline
+A & B & C & D & E\\
+\hline
+\endfirsthead
+\hline
+A & B & C & D  & E\\
+\hline
+\endhead
+\hline
+\endfoot
+1&  8&  9&  15& 16\\
+2&  7&  0&  14& 17\\
+3&  6&  10&  13& 18\\
+4&  5&  11&  12& 19\\
+1&  8&  9&  15& 16\\
+2&  7&  0&  14& 17\\
+3&  6&  10&  13& 18\\
+4&  5&  11&  12& 19\\
+1&  8&  9&  15& 16\\
+2&  7&  0&  14& 17\\
+3&  6&  10&  13& 18\\
+4&  5&  11&  12& 19\\
+1&  8&  9&  15& 16\\
+2&  7&  0&  14& 17\\
+3&  6&  10&  13& 18\\
+4&  5&  11&  12& 19\\
+1&  8&  9&  15& 16\\\hline
+2&  7&  0&  14& 17\\
+3&  6&  10&  13& 18\\
+4&  5&  11&  12& 19\\
+1&  8&  9&  15& 16\\
+2&  7&  0&  14& 17\\
+3&  6&  10&  13& 18\\
+4&  5&  11&  12& 19\\
+1&  8&  9&  15& 16\\
+2&  7&  0&  14& 17\\
+3&  6&  10&  13& 18\\
+4&  5&  11&  12& 19\\
+1&  8&  9&  15& 16\\
+2&  7&  0&  14& 17\\ \hline
+3&  6&  10&  13& 18\\
+4&  5&  11&  12& 19\\
+1&  8&  9&  15& 16\\
+2&  7&  0&  14& 17\\
+3&  6&  10&  13& 18\\
+4&  5&  11&  12& 19\\
+1&  8&  9&  15& 16\\
+2&  7&  0&  14& 17\\
+3&  6&  10&  13& 18\\
+4&  5&  11&  12& 19\\
+1&  8&  9&  15& 16\\
+2&  7&  0&  14& 17\\
+3&  6&  10&  13& 18\\
+4&  5&  11&  12& 19\\
+1&  8&  9&  15& 16\\
+2&  7&  0&  14& 17\\
+3&  6&  10&  13& 18\\
+4&  5&  11&  12& 19\\
+1&  8&  9&  15& 16\\
+2&  7&  0&  14& 17\\
+3&  6&  10&  13& 18\\
+4&  5&  11&  12& 19\\
+1&  8&  9&  15& 16\\
+2&  7&  0&  14& 17\\
+3&  6&  10&  13& 18\\
+4&  5&  11&  12& 19\\
+1&  8&  9&  15& 16\\
+2&  7&  0&  14& 17\\
+3&  6&  10&  13& 18\\
+4&  5&  11&  12& 19\\
+\end{longtable}
+\end{document}
